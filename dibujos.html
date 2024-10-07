@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: 'Copse', sans-serif;
+            background-image: url('fondo1.jpg');
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: gray;
+            color: black;
+        }
+        footer {
+            margin-top: auto;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .gallery img {
+            max-width: 80%; /* Reduce image size */
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .btn-download {
+            display: block;
+            margin: 0 auto; /* Center the button */
+            width: 80%; /* Make the button wider */
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="novela.html">Novel</a></li>
+        <li><a href="videojuego.html">Game</a></li>
+        <li><a href="dibujos.html" class="active">Drawings</a></li>
+    </ul>
+</nav>
+
+<div class="container mt-5" style="margin-top: 80px;">
+    <h1 class="text-center">Print and Color the Orrery 42 Crew!</h1>
+   <p>We invite you to download and print our crew designs so you can have fun giving them life and color!!! Their links are below the images, we hope to see them in more space adventures!</p> 
+
+    <div class="row gallery justify-content-center">
+        <div class="col-md-3 text-center mb-3">
+            <img src="div1.jpg" alt="Image 1" class="img-fluid">
+            <a href="div1.jpg" download class="btn btn-primary btn-download">Download Image 1</a>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <img src="div2.jpg" alt="Image 2" class="img-fluid">
+            <a href="div2.jpg" download class="btn btn-primary btn-download">Download Image 2</a>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <img src="div3.jpg" alt="Image 3" class="img-fluid">
+            <a href="div3.jpg" download class="btn btn-primary btn-download">Download Image 3</a>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <img src="div4.jpg" alt="Image 4" class="img-fluid">
+            <a href="div4.jpg" download class="btn btn-primary btn-download">Download Image 4</a>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+    <p>&copy; 2024 Planetarium 42. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
